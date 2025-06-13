@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DLiNKS GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #00a86b, #00796b);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    section:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+    section:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+    section:nth-of-type(4) {
+      animation-delay: 0.9s;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #00a86b;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #003f3f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DLiNKS GROUP</h1>
+    <p>Innovation, Service & Impact Across Fumigation, Tech, Agro-Investment, Auto Dealership, and Media.</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Our Divisions</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?pest-control" alt="Fumigation">
+        <h3>DLiNKS Fumigation Services</h3>
+        <p>Eco-friendly pest control solutions for homes, industries, and farms.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?technology" alt="Tech">
+        <h3>DLiNKSTECHUPS</h3>
+        <p>Tech support, project management, and innovative IT solutions.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?agriculture" alt="Investment">
+        <h3>DLiNKS Investment</h3>
+        <p>Agro-business development and administrative business services.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?cars" alt="Auto">
+        <h3>DLiNKS Auto Dealership</h3>
+        <p>Affordable, high-quality cars from trusted brands.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/?media" alt="Media">
+        <h3>DLiNKS Media</h3>
+        <p>Digital media services, animations, branding and event coverage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Why Choose DLiNKS GROUP?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Trusted Experience</h3>
+        <p>Over a decade of cross-industry experience and client trust.</p>
+      </div>
+      <div class="card">
+        <h3>Nationwide Reach</h3>
+        <p>Serving clients across Nigeria with professional service delivery.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-Division Strength</h3>
+        <p>Five powerful business arms with one unified mission.</p>
+      </div>
+      <div class="card">
+        <h3>100+ Successful Projects</h3>
+        <p>Proven track record of excellence across various industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align:center; max-width: 600px; margin: auto;">
+      Ready to work with DLiNKS GROUP? Reach out to us via phone, email, or WhatsApp. We're here to bring your vision to life.
+    </p>
+    <div style="text-align:center; margin-top: 20px;">
+      <p><strong>📞</strong> Call: <a href="tel:+2349167218280">+234 916 721 8280</a></p>
+      <p><strong>💬</strong> WhatsApp: <a href="https://wa.me/2348085822597" target="_blank">Chat with us</a></p>
+      <p><strong>📧</strong> Email: contact@dlinksgroup.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DLiNKS GROUP. All rights reserved.</p>
+    <p>Follow us on social media</p>
+  </footer>
+</body>
+</html>
